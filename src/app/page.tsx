@@ -8,7 +8,6 @@ export default function Home() {
   const [wins, setWins] = useState(0);
   const [hint, setHint] = useState('Press the guess button to begin!');
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 100) + 1);
-  console.log(randomNum)
 
   function randomNumberGen() {
     setRandomNum(Math.floor(Math.random() * 100) + 1);
