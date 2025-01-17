@@ -35,10 +35,6 @@ export default function Home() {
       e.preventDefault();
     }
   };
-
-  const handleChange = (e: any) => {
-    setGuess(Number(e.target.value));
-  };
   /* ChatGPT */
 
   return (
@@ -57,7 +53,7 @@ export default function Home() {
           max="100"
           step="1"
           onKeyDown={handleKeyDown}
-          onChange={handleChange}
+          onChange={(e)=>setGuess(Number(e.target.value))}
         />
       </div>
       <h2 id="hint">Hint: {hint}</h2>
